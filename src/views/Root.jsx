@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 import { navData } from "../data/navData.json";
 
@@ -16,6 +17,7 @@ const Root = () => {
         navLinks={navData}
       />
       <Outlet />
+      <Footer />
     </div>
   );
 };
