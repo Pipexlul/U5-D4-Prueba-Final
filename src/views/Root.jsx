@@ -6,7 +6,7 @@ import { navData } from "../data/navData.json";
 
 const Root = () => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen bg-gray-900">
       <NavBar
         header="Mamma Mia Pizzeria "
         headerExtra="🍕 👩‍🍳"
