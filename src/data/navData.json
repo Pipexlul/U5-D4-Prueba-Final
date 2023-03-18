@@ -1,0 +1,19 @@
+{
+  "navData": [
+    {
+      "name": "home",
+      "label": "Home",
+      "path": "/home"
+    },
+    {
+      "name": "detailedPizza",
+      "label": "Pizza",
+      "path": "/pizza"
+    },
+    {
+      "name": "cart",
+      "label": "Carrito",
+      "path": "/carrito"
+    }
+  ]
+}
