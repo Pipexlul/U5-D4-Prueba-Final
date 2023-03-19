@@ -2,14 +2,14 @@ import { useContext } from "react";
 
 import PizzaContext from "../contexts/PizzaContext";
 
-import PIzzaCardGrid from "../components/PIzzaCardGrid";
+import PizzaCardGrid from "../components/PizzaCardGrid";
 
 const Home = () => {
   const { pizzaData } = useContext(PizzaContext);
 
   return (
     <div>
-      <PIzzaCardGrid pizzaData={pizzaData} />
+      <PizzaCardGrid pizzaData={pizzaData} />
     </div>
   );
 };
