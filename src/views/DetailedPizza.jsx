@@ -1,5 +1,11 @@
+import { useParams } from "react-router-dom";
+
+import PizzaFullData from "../components/PizzaFullData";
+
 const DetailedPizza = () => {
-  return <div>DetailedPizza</div>;
+  const { pizzaId } = useParams();
+
+  return <PizzaFullData id={pizzaId} />;
 };
 
 export default DetailedPizza;

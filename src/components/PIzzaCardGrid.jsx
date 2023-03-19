@@ -7,6 +7,7 @@ const PIzzaCardGrid = ({ pizzaData }) => {
         return (
           <PizzaCard
             key={pizza.id}
+            id={pizza.id}
             name={pizza.name}
             desc={pizza.desc}
             ingredients={pizza.ingredients}

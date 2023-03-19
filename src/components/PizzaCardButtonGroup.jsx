@@ -1,10 +1,15 @@
 import PizzaCardAmountButton from "./PizzaCardAmountButton";
 
-const PizzaCardButtonGroup = () => {
+import { useNavigate } from "react-router-dom";
+
+const PizzaCardButtonGroup = ({ pizzaId }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="flex justify-between">
       <button
         type="button"
+        onClick={() => navigate(`/pizza/${pizzaId}`)}
         className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-emerald-600 hover:bg-emerald-700 focus:ring-emerald-800"
       >
         Ver Detalles

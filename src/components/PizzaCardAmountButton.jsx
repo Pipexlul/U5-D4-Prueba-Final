@@ -1,11 +1,11 @@
 const PizzaCardAmountButton = () => {
   return (
-    <div className="inline-flex items-center border divide-x rounded divide-gray-800 border-gray-700">
+    <div className="inline-flex place-content-center border divide-x rounded divide-gray-800 border-gray-700">
       <button
         type="button"
-        className="w-10 h-10 leading-10 transition hover:opacity-90 text-gray-300 bg-red-400/40 hover:bg-red-400/75"
+        className="w-10 h-10 leading-10 transition hover:opacity-90 text-gray-300 bg-red-400/40 hover:bg-red-400/75 text-2xl"
       >
-        &minus;
+        -
       </button>
 
       <span>
@@ -19,7 +19,7 @@ const PizzaCardAmountButton = () => {
 
       <button
         type="button"
-        className="w-10 h-10 leading-10 transition hover:opacity-90 text-gray-300 bg-green-400/40 hover:bg-green-400/75"
+        className="w-10 h-10 leading-10 transition hover:opacity-90 text-gray-300 bg-green-400/40 hover:bg-green-400/75 text-2xl"
       >
         +
       </button>

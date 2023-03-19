@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
-import PizzaContextProvider from "../contexts/PizzaContext";
+import { PizzaContextProvider } from "../contexts/PizzaContext";
 
 import { navData } from "../data/navData.json";
 

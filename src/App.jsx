@@ -17,7 +17,7 @@ const router = createHashRouter([
         element: <Home />,
       },
       {
-        path: "/pizza/:id",
+        path: "/pizza/:pizzaId",
         element: <DetailedPizza />,
       },
       {
