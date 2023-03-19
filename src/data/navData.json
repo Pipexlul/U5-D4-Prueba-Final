@@ -6,11 +6,6 @@
       "path": "/home"
     },
     {
-      "name": "detailedPizza",
-      "label": "Pizza",
-      "path": "/pizza"
-    },
-    {
       "name": "cart",
       "label": "Carrito",
       "path": "/carrito"
