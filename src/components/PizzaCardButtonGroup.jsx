@@ -27,7 +27,7 @@ const PizzaCardButtonGroup = ({ pizzaId }) => {
           ></path>
         </svg>
       </button>
-      <PizzaCardAmountButton />
+      <PizzaCardAmountButton id={pizzaId} />
     </div>
   );
 };

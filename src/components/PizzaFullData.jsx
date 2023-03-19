@@ -54,7 +54,7 @@ const PizzaFullData = ({ id }) => {
               <p className="text-2xl font-bold text-white mb-5">
                 {formatNumToCLP(price)}
               </p>
-              <PizzaCardAmountButton />
+              <PizzaCardAmountButton id={id} />
             </div>
           </div>
 

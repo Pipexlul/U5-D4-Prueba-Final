@@ -51,6 +51,10 @@ const PizzaContextProvider = ({ children }) => {
     return pizzaDataLUT[pizzaId]?.dbData;
   };
 
+  const getSelectedPizzaAmount = (pizzaId) => {
+    return pizzaDataLUT[pizzaId]?.state.selectedAmount;
+  };
+
   return (
     <PizzaContext.Provider
       value={{
@@ -59,7 +63,8 @@ const PizzaContextProvider = ({ children }) => {
         totalToPay,
         addOrRemovePizza,
         getDBPizzaData,
-        loadLUT,
+        getSelectedPizzaAmount,
+        totalToPay,
       }}
     >
       {!isEmpty(pizzaDataLUT) && children}
