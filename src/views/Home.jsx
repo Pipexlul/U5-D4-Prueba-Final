@@ -1,13 +1,11 @@
-import PizzaCard from "../components/PizzaCard";
+import PIzzaCardGrid from "../components/PIzzaCardGrid";
 
 import pizzaData from "../data/pizzas.json";
-
-const firstPizza = pizzaData[0];
 
 const Home = () => {
   return (
     <div>
-      <PizzaCard {...firstPizza} />
+      <PIzzaCardGrid pizzaData={pizzaData} />
     </div>
   );
 };
