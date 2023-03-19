@@ -51,8 +51,26 @@ const PizzaContextProvider = ({ children }) => {
     return pizzaDataLUT[pizzaId]?.dbData;
   };
 
+  const getDBPizzaDataAllSelected = () => {
+    return Object.values(pizzaDataLUT)
+      .filter((pizza) => pizza.state.selectedAmount > 0)
+      .reduce((acc, curr) => {
+        return acc.concat(curr.dbData);
+      }, []);
+  };
+
   const getSelectedPizzaAmount = (pizzaId) => {
     return pizzaDataLUT[pizzaId]?.state.selectedAmount;
+  };
+
+  const getSubtotalForPizza = (pizzaId) => {
+    return getDBPizzaData(pizzaId).price * getSelectedPizzaAmount(pizzaId);
+  };
+
+  const getTotalSelectedPizzas = () => {
+    return Object.values(pizzaDataLUT).reduce((acc, curr) => {
+      return acc + curr.state.selectedAmount;
+    }, 0);
   };
 
   return (
@@ -63,7 +81,9 @@ const PizzaContextProvider = ({ children }) => {
         totalToPay,
         addOrRemovePizza,
         getDBPizzaData,
+        getDBPizzaDataAllSelected,
         getSelectedPizzaAmount,
+        getSubtotalForPizza,
         totalToPay,
       }}
     >
