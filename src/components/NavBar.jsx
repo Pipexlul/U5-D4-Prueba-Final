@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 
 import ShinyNavLink from "./ShinyNavLink";
+import CartButton from "./CartButton";
 
 const NavBar = ({
   header,
@@ -49,6 +50,14 @@ const NavBar = ({
               })}
             </ul>
           </nav>
+
+          <CartButton
+            label="🛒 Carrito: "
+            bgColor="bg-green-500 hover:bg-green-300"
+            bgColorEmpty="bg-red-500 hover:bg-red-300"
+            textColor="text-black"
+            cartPath="/carrito"
+          />
         </div>
       </div>
     </header>
