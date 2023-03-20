@@ -1,12 +1,12 @@
 import { createHashRouter, RouterProvider, Navigate } from "react-router-dom";
 
-import { Root, Home, DetailedPizza, Cart } from "./views";
+import { Root, Home, DetailedPizza, Cart, ErrorPage } from "./views";
 
 const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: null,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
