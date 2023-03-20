@@ -84,7 +84,6 @@ const PizzaContextProvider = ({ children }) => {
         getDBPizzaDataAllSelected,
         getSelectedPizzaAmount,
         getSubtotalForPizza,
-        totalToPay,
       }}
     >
       {!isEmpty(pizzaDataLUT) && children}
